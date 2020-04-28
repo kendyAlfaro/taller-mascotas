@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 
@@ -36,7 +37,7 @@ public class CustomListAdapter extends BaseAdapter {
     public View getView(int position, View v, ViewGroup vg) {
         ViewHolder holder;
         if (v == null) {
-            v = layoutInflater.inflate(R.layout.list_row, null);
+            v = layoutInflater.inflate(R.layout.item, null);
             holder = new ViewHolder();
             holder.uName = (TextView) v.findViewById(R.id.name);
             holder.uDesignation = (TextView) v.findViewById(R.id.designation);

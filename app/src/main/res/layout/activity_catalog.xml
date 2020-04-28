@@ -21,23 +21,27 @@
     <TextView
         android:id="@+id/text_view_pet"
         android:layout_width="match_parent"
+        android:layout_height="100sp"
+        android:layout_alignParentTop="true"
+        android:padding="@dimen/activity_margin" />
+
+    <ListView
+        android:id="@+id/list_view"
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:padding="@dimen/activity_margin"/>
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:drawSelectorOnTop="false" />
+
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="0dip"
         android:layout_weight="1">
-        <ListView
-            android:id="@android:id/list"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:drawSelectorOnTop="false" />
-
         <TextView
             android:id="@android:id/empty"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="No hay puntuaciones" />
+            android:text="@string/no_hay_puntuaciones" />
     </FrameLayout>
 
     <android.support.design.widget.FloatingActionButton

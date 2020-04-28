@@ -2,9 +2,8 @@ package com.example.android.pets;
 
 public class ListItem {
     private String name;
-    private String breed;
-    private String gender;
-    private String weight;
+    private String designation;
+    private String location;
 
     public String getName() {
         return name;
@@ -14,27 +13,20 @@ public class ListItem {
         this.name = name;
     }
 
-    public String getBreed() {
-        return breed;
+    public String getDesignation() {
+        return designation;
     }
 
-    public void setBreed(String breed) {
-        this.breed = breed;
+    public void setDesignation(String designation) {
+        this.designation = designation;
     }
 
-    public String getGender() {
-        return gender;
+    public String getLocation() {
+        return location;
     }
 
-    public void setGender(String gender) {
-        this.gender = gender;
+    public void setLocation(String location) {
+        this.location = location;
     }
 
-    public String getWeight() {
-        return weight;
-    }
-
-    public void setWeight(String weight) {
-        this.weight = weight;
-    }
 }
